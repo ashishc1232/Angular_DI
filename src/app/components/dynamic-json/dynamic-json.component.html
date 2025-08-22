@@ -1,0 +1,7 @@
+<p>dynamic-json works!</p>
+
+<ul>
+    <li *ngFor="let user of users">{{user.name}} (ID:{{user.id}})</li>
+</ul>
+
+<app-reusable-table [columns]="columns" [data]="data" />
