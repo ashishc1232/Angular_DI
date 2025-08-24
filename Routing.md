@@ -18,7 +18,7 @@ Here's a breakdown of routing types with examples that we’ll **implement in co
 
 ##  Complete Code Setup (Everything in One Project)
 
-📁 **Folder Structure:**
+ **Folder Structure:**
 
 ```
 src/
@@ -42,7 +42,7 @@ src/
 
 ---
 
-### 🔹 `main.ts`
+###  `main.ts`
 
 ```ts
 import { bootstrapApplication } from '@angular/platform-browser';
@@ -57,7 +57,7 @@ bootstrapApplication(AppComponent, {
 
 ---
 
-### 🔹 `app/app.routes.ts`
+###  `app/app.routes.ts`
 
 ```ts
 import { Routes } from '@angular/router';
@@ -105,7 +105,7 @@ export const routes: Routes = [
 
 ---
 
-### 🔹 `app/app.component.ts`
+###  `app/app.component.ts`
 
 ```ts
 import { Component } from '@angular/core';
@@ -134,9 +134,9 @@ export class AppComponent {}
 
 ---
 
-## 🧱 All Components
+##  All Components
 
-### ✅ `home/home.component.ts`
+###  `home/home.component.ts`
 
 ```ts
 import { Component } from '@angular/core';
@@ -149,7 +149,7 @@ import { Component } from '@angular/core';
 export class HomeComponent {}
 ```
 
-### ✅ `user/user.component.ts`
+###  `user/user.component.ts`
 
 ```ts
 import { Component, OnInit } from '@angular/core';
@@ -171,7 +171,7 @@ export class UserComponent implements OnInit {
 }
 ```
 
-### ✅ `dashboard/dashboard.component.ts`
+###  `dashboard/dashboard.component.ts`
 
 ```ts
 import { Component } from '@angular/core';
@@ -191,7 +191,7 @@ import { RouterOutlet, RouterModule } from '@angular/router';
 export class DashboardComponent {}
 ```
 
-### ✅ `dashboard/details.component.ts`
+###  `dashboard/details.component.ts`
 
 ```ts
 import { Component } from '@angular/core';
@@ -204,7 +204,7 @@ import { Component } from '@angular/core';
 export class DetailsComponent {}
 ```
 
-### ✅ `dashboard/stats.component.ts`
+###  `dashboard/stats.component.ts`
 
 ```ts
 import { Component } from '@angular/core';
@@ -219,7 +219,7 @@ export class StatsComponent {}
 
 ---
 
-### ✅ `feature/feature.component.ts` (Lazy-loaded Component)
+###  `feature/feature.component.ts` (Lazy-loaded Component)
 
 ```ts
 import { Component } from '@angular/core';
@@ -234,7 +234,7 @@ export class FeatureComponent {}
 
 ---
 
-### ✅ `admin.routes.ts` (Lazy-loaded Route Group)
+###  `admin.routes.ts` (Lazy-loaded Route Group)
 
 ```ts
 import { Routes } from '@angular/router';
@@ -249,7 +249,7 @@ export const adminRoutes: Routes = [
 
 ---
 
-### ✅ `admin/admin.component.ts`
+###  `admin/admin.component.ts`
 
 ```ts
 import { Component } from '@angular/core';
@@ -264,7 +264,7 @@ export class AdminComponent {}
 
 ---
 
-### ✅ `not-found/not-found.component.ts`
+###  `not-found/not-found.component.ts`
 
 ```ts
 import { Component } from '@angular/core';
@@ -279,9 +279,9 @@ export class NotFoundComponent {}
 
 ---
 
-## 🔐 Guards & Services
+##  Guards & Services
 
-### ✅ `auth.service.ts`
+###  `auth.service.ts`
 
 ```ts
 import { Injectable } from '@angular/core';
@@ -294,7 +294,7 @@ export class AuthService {
 }
 ```
 
-### ✅ `auth.guard.ts`
+###  `auth.guard.ts`
 
 ```ts
 import { CanActivateFn } from '@angular/router';
@@ -311,7 +311,7 @@ export const authGuard: CanActivateFn = (route, state) => {
 
 ---
 
-## ✅ How to Run
+##  How to Run
 
 1. Create Angular 18 project:
 
